@@ -230,7 +230,7 @@ To select all elements that have a given attribute, you use one of the following
 
 
  // sample code to find elements. 
- 
+
 // <!DOCTYPE html>
 // <html lang="en">
 // <head>
@@ -278,13 +278,13 @@ To select all elements that have a given attribute, you use one of the following
 //     example5.classList.add('selected');
 
     // [attribute$=value]
-    let example6 = document.querySelector('[class$="suffix"]');
-    example6.classList.add('selected');
+//     let example6 = document.querySelector('[class$="suffix"]');
+//     example6.classList.add('selected');
 
-    // [attribute*=value]
-    let example7 = document.querySelector('[title*="substring"]');
-    example7.classList.add('selected');
-  </script>
+//     // [attribute*=value]
+//     let example7 = document.querySelector('[title*="substring"]');
+//     example7.classList.add('selected');
+//   </script>
 
-</body>
-</html>
+// </body>
+// </html>
