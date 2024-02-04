@@ -288,3 +288,50 @@ To select all elements that have a given attribute, you use one of the following
 
 // </body>
 // </html>
+
+
+//Grouping selectors
+// finding all the div and p tags. 
+const allelements = document.querySelectorAll("div, p");
+console.log(allelements);
+console.log(allelements.length);
+
+const itemarray = [...allelements];
+itemarray.forEach((eachitem)=>{
+    console.log(eachitem.innerHTML);
+})
+
+
+//Combinators
+// 1. descendant combinator
+// NOTE - use space between the tag names while finding.
+// lets find all the anchor(links) tags followed just inside the p tag. 
+
+let links = document.querySelector('p a');
+console.log(links);
+console.log(links.textContent);
+console.log(links.innerHTML);
+
+
+// 2. child combinators , 
+// > symbol is used to find the direct children of the parent element. 
+// ul > li ,  will find all the child elements li, of the parent  ul tag. 
+
+let allmonths = document.querySelectorAll('ul > li');
+console.log(allmonths);
+console.log(allmonths.innerHTML); //  undefined
+console.log(allmonths.textContent); // undefined
+
+
+console.log(allmonths[0].innerHTML); // Accessing the first element
+console.log(allmonths[0].textContent);
+
+console.log(allmonths[1].innerHTML); // Accessing the second element
+console.log(allmonths[1].textContent);
+
+
+// use a for loop to iterate through all the elements. 
+
+allmonths.forEach((month) => {
+    console.log(month.innerHTML);
+});
