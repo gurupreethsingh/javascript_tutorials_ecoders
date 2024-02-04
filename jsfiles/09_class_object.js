@@ -1,3 +1,43 @@
+// syntax of making class, object, static field, static methods, private methods with # symbols in front of them. 
+
+// class MyClass {
+
+//     // Constructor
+//     constructor() {
+//       // Constructor body
+//     }
+
+//     // Instance field / non static member
+//     myField = "foo";
+//     // Instance method / non static function
+//     myMethod() {
+//       // myMethod body
+//     }
+
+//     // Static field /  static member 
+//     static myStaticField = "bar";
+//     // Static method
+//     static myStaticMethod() {
+//       // myStaticMethod body
+//     }
+
+//     // Static block or static funtion.
+//     static {
+//       // Static initialization code
+//     }
+
+//     // Fields, methods, static fields, and static methods all have
+//     // "private" forms
+//     #myPrivateField = "bar";
+//   }
+
+
+// class can also be assigned to an expression. 
+
+const employee = class Employee{
+    // employee  class code.
+}
+
 
 // // creating a software to store information about students. 
 
@@ -142,8 +182,6 @@ p3.widthdraw(3000);
 
 
 // same constructor or function in super class as that of in child class . then we will use the super. keyword to access the constructor or the function of the super class. or else we would have invoked the constructor of the child class. 
-
-
 class Cat{
     constructor(name)
     {
@@ -168,5 +206,4 @@ class Dog extends Cat
 }
 
 const animal1 = new Dog("tommy");
-
 animal1.speak(); // tommy makes dog sounds
