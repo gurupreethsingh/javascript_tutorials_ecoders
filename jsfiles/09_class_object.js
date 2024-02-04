@@ -124,3 +124,49 @@ p2.deposit(10000);
 p2.deposit(-5000);
 p2.widthdraw(30000);
 p2.widthdraw(3000);
+
+
+
+
+// inheritance , using the extends keyword. 
+class Axis extends Bank{
+    // no need to write any code. 
+}
+
+const p3 = new Axis("Mahesh" , "USA" , 50000);
+p3.showbalance();
+p3.deposit(10000);
+p3.deposit(-5000);
+p3.widthdraw(30000);
+p3.widthdraw(3000);
+
+
+// same constructor or function in super class as that of in child class . then we will use the super. keyword to access the constructor or the function of the super class. or else we would have invoked the constructor of the child class. 
+
+
+class Cat{
+    constructor(name)
+    {
+        this.name = name;
+    }
+
+    speak()
+    {
+        console.log(`${this.name}, makes cat sound`);
+    }
+}
+
+class Dog extends Cat
+{
+    speak()
+    {
+        // this function is going to call the super class function speak() using the super. keyword.
+
+        // super.speak();
+        console.log(`${this.name}, makes Dog sound`);
+    }
+}
+
+const animal1 = new Dog("tommy");
+
+animal1.speak(); // tommy makes dog sounds
